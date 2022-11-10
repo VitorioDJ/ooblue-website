@@ -50,9 +50,7 @@
 
   </head>
 
-
   <body data-spy="scroll" data-target="#navbar-one-page" data-offset="80">
-
 
     <!-- ===============================================-->
     <!--    Main Content-->
@@ -81,6 +79,22 @@
       <!-- End of Preloader ===========================-->
 
 
+      <!-- =======================================-->
+      <!-- FORM begin ============================-->
+      <form class="zform text-left" method="post">
+        <!-- Enter TO: e-mail address here -->
+        <input type="hidden" name="to" value="vitorio@ooblue.is" />
+        <!-- Enter CSV FILE NAME: CSV File Name (without extension) -->
+        <input type="hidden" name="file" value="app-elevate" /> 
+        <!-- Enter SUBJECT: e-mail subject here -->
+        <input type="hidden" name="subject" value="Application - ooBlue Elevate!" /> 
+        <!-- Enter REDIRECT: redirection after form submitted -->
+        <input type="hidden" name="redirect" value="https://ooblue.is" />
+
+
+
+      <!-- ============================================-->
+      <!-- HEADER begin ============================-->
       <section class="py-0 text-center overflow-hidden" id="top" data-zanim-timeline="{}" data-zanim-trigger="scroll">
 
         <div class="bg-holder overlay overlay-z-index-1" style="background-image:url(./assets/img/headers/header-mdtx-02.jpg);">
@@ -96,8 +110,8 @@
           <div class="d-flex flex-center vh-100">
             <div class="header-text">
               <div class="overflow-hidden">
-                <!-- <h1 class="display-3 text-white fs- fs-md-7 font-weight-medium" data-zanim-xs='{"duration":2,"delay":0}'>Application</h1> -->
-                <h5 class="display-3 text-white fs-2 fs-md-4" data-zanim-xs='{"duration":2,"delay":0.1}'>Hello dear one</h5>
+                <h1 class="display-3 text-white fs- fs-md-7 font-weight-medium" data-zanim-xs='{"duration":2,"delay":0}'>Hello</h1>
+                <h5 class="display-3 text-white fs-2 fs-md-4" data-zanim-xs='{"duration":2,"delay":0.1}'>dear one</h5>
                 <!-- <h5 class="display-3 text-white fs-2 fs-md-4" data-zanim-xs='{"duration":2,"delay":0.1}'><img src="./assets/img/illustration/mmi2.png" alt="Me, My Parents & I" width="250" height="70"></h5> -->
               </div>    
 
@@ -124,19 +138,8 @@
 
         </div>
       </section>
-
-
+      <!-- HEADER close ============================-->
       <!-- ============================================-->
-      <!-- FORM begin ============================-->
-      <form class="zform text-left" method="post">
-        <!-- Enter TO: e-mail address here -->
-        <input type="hidden" name="to" value="vitorio@ooblue.is" />
-        <!-- Enter CSV FILE NAME: CSV File Name (without extension) -->
-        <input type="hidden" name="file" value="application-elevate" /> 
-        <!-- Enter SUBJECT: e-mail subject here -->
-        <input type="hidden" name="subject" value="E-mail from ooBlue.is" /> 
-
-
 
 
       <!-- ============================================-->
@@ -149,12 +152,11 @@
             <div class="header-text">
 
               <div class="row align-items-left">
-                <div class="col-md-2"></div>
+                <div class="col-md-1"></div>
 
                 <div class="col-md-10 text-left">
                   <blockquote class="blockquote">
                     <p class="fs-2 text-800 font-weight-medium font-italic">Your First and Last Name: <sup class="fs-1">*</sup></p>
-                    <!-- <footer class="blockquote-footer text-600">Ken Honda</footer> -->
                   </blockquote>
 
                   <div class="form-group">
@@ -178,12 +180,11 @@
 
                 </div> <!-- MID-COLUMN -->
 
-                <div class="col-md-2"></div>         
+                <div class="col-md-1"></div>         
               </div> <!-- ROW -->
 
             </div>
           </div> <!-- END vh-100 -->
-
         </div> <!-- END <container> -->
 
       </section>
@@ -202,7 +203,7 @@
             <div class="header-text">
 
               <div class="row align-items-left">
-                <div class="col-md-2"></div>
+                <div class="col-md-1"></div>
 
                 <div class="col-md-10 text-left">
                   <blockquote class="blockquote">
@@ -228,12 +229,11 @@
 
                 </div> <!-- MID-COLUMN -->
 
-                <div class="col-md-2"></div>         
+                <div class="col-md-1"></div>         
               </div> <!-- ROW -->
 
             </div>
           </div> <!-- END vh-100 -->
-
         </div> <!-- END <container> -->
 
       </section>
@@ -254,7 +254,7 @@
               <div class="row align-items-left">
                 <div class="col-md-2"></div>
 
-                <div class="col-md-10 text-left">
+                <div class="col-md-8 text-left">
                   <blockquote class="blockquote">
                     <p class="fs-2 text-800 font-weight-medium font-italic">Where are you currently based in the world? (city, country)<sup class="fs-1">*</sup></p>
                     <!-- <footer class="blockquote-footer text-600">Ken Honda</footer> -->
@@ -283,13 +283,11 @@
 
             </div>
           </div> <!-- END vh-100 -->
-
         </div> <!-- END <container> -->
 
       </section>
       <!-- <section> close ============================-->
       <!-- ============================================-->
-
 
 
       <!-- ============================================-->
@@ -302,7 +300,453 @@
             <div class="header-text">
 
               <div class="row align-items-left">
+                <div class="col-md-1"></div>
+
+                <div class="col-md-10 text-left">
+                  <blockquote class="blockquote">
+                    <p class="fs-2 text-800 font-weight-medium font-italic">Describe yourself in four words:<sup class="fs-1">*</sup></p>
+                  </blockquote>
+
+                  <div class="form-group">
+                    <!-- <label>Your Current Location</label> -->
+                    <input class="fs-0 form-control" type="text" name="4-words" placeholder="Me in 4 words" required="required" />
+                  </div>
+
+                  <!-- <p class="lead">Some text</p> -->
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top mt-4 mb-1 px-4" href="#app-05" data-fancyscroll="data-fancyscroll">OK<span class="ml-2 fas fa-check"></span></a>
+                  </div>
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-03" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-up"></span></a>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-05" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-down"></span></a>
+                  </div>
+
+                </div> <!-- MID-COLUMN -->
+
+                <div class="col-md-1"></div>         
+              </div> <!-- ROW -->
+
+            </div>
+          </div> <!-- END vh-100 -->
+        </div> <!-- END <container> -->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-3 pt-lg-5 text-center" id="app-05" >
+
+        <div class="container">
+
+          <div class="d-flex flex-center vh-100">
+            <div class="header-text">
+
+              <div class="row align-items-left">
                 <div class="col-md-2"></div>
+
+                <div class="col-md-8 text-left">
+                  <blockquote class="blockquote">
+                    <p class="fs-2 text-800 font-weight-medium font-italic">What is your main occupation righ now? (9-5, freelancer, business owner, starting your own dream business...)<sup class="fs-1">*</sup></p>
+                  </blockquote>
+
+                  <div class="form-group">
+                    <!-- <label>Your Current Location</label> -->
+                    <input class="fs-0 form-control" type="text" name="occupation" placeholder="Main occupation" required="required" />
+                  </div>
+
+                  <!-- <p class="lead">Some text</p> -->
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top mt-4 mb-1 px-4" href="#app-06" data-fancyscroll="data-fancyscroll">OK<span class="ml-2 fas fa-check"></span></a>
+                  </div>
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-04" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-up"></span></a>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-06" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-down"></span></a>
+                  </div>
+
+                </div> <!-- MID-COLUMN -->
+
+                <div class="col-md-2"></div>         
+              </div> <!-- ROW -->
+
+            </div>
+          </div> <!-- END vh-100 -->
+        </div> <!-- END <container> -->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-3 pt-lg-5 text-center" style="background-color: #F6F0E2;" id="app-06" >
+
+        <div class="container">
+
+          <div class="d-flex flex-center vh-100">
+            <div class="header-text">
+
+              <div class="row align-items-left">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8 text-left">
+                  <blockquote class="blockquote">
+                    <p class="fs-2 text-800 font-weight-medium font-italic">What are the 3 top challenges you're facing in your life right now?<sup class="fs-1">*</sup></p>
+                  </blockquote>
+
+                  <div class="form-group">
+                    <!-- <label>Your Current Location</label> -->
+                    <textarea class="fs-0 form-control contact-message" rows="8" name="3-challenges" placeholder="3 challenges"></textarea>
+                  </div>
+
+                  <!-- <p class="lead">Some text</p> -->
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top mt-4 mb-1 px-4" href="#app-07" data-fancyscroll="data-fancyscroll">OK<span class="ml-2 fas fa-check"></span></a>
+                  </div>
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-05" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-up"></span></a>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-07" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-down"></span></a>
+                  </div>
+
+                </div> <!-- MID-COLUMN -->
+
+                <div class="col-md-2"></div>         
+              </div> <!-- ROW -->
+
+            </div>
+          </div> <!-- END vh-100 -->
+        </div> <!-- END <container> -->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-3 pt-lg-5 text-center" id="app-07" >
+
+        <div class="container">
+
+          <div class="d-flex flex-center vh-100">
+            <div class="header-text">
+
+              <div class="row align-items-left">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8 text-left">
+                  <blockquote class="blockquote">
+                    <p class="fs-2 text-800 font-weight-medium font-italic">On a scale 1-10, how big is this pain?<sup class="fs-1">*</sup></p>
+                  </blockquote>
+
+                  <div class="form-group">
+                    <!-- <label>Date and Time of Birth *</label> -->
+                    <div class="input-group mb-3">
+                      <div class="input-group-prepend"><span class="input-group-text">Pain Intensity</span></div>
+                      <input class="form-control" type="text" name="pain-1" aria-label="1st challenge" placeholder="1st challenge 1-10" required="required">
+                      <input class="form-control" type="text" name="pain-2" aria-label="2nd challenge" placeholder="2nd challenge 1-10" required="required">
+                      <input class="form-control" type="text" name="pain-3" aria-label="3rd challenge" placeholder="3rd challenge 1-10" required="required">
+                    </div>
+                  </div>
+
+                  <!-- <p class="lead">Some text</p> -->
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top mt-4 mb-1 px-4" href="#app-08" data-fancyscroll="data-fancyscroll">OK<span class="ml-2 fas fa-check"></span></a>
+                  </div>
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-06" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-up"></span></a>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-08" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-down"></span></a>
+                  </div>
+
+                </div> <!-- MID-COLUMN -->
+
+                <div class="col-md-2"></div>         
+              </div> <!-- ROW -->
+
+            </div>
+          </div> <!-- END vh-100 -->
+        </div> <!-- END <container> -->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-3 pt-lg-5 text-center" style="background-color: #F6F0E2;" id="app-08" >
+
+        <div class="container">
+
+          <div class="d-flex flex-center vh-100">
+            <div class="header-text">
+
+              <div class="row align-items-left">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8 text-left">
+                  <blockquote class="blockquote">
+                    <p class="fs-2 text-800 font-weight-medium font-italic">On a scale 1-10, how badly do you want to improve your current situation? <sup class="fs-1">*</sup></p>
+                  </blockquote>
+
+                  <div class="form-group">
+                    <!-- <label>Your Current Location</label> -->
+                    <input class="fs-0 form-control" type="text" name="desire-to-improve" placeholder="1-10" required="required" />
+                  </div>
+
+                  <!-- <p class="lead">Some text</p> -->
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top mt-4 mb-1 px-4" href="#app-09" data-fancyscroll="data-fancyscroll">OK<span class="ml-2 fas fa-check"></span></a>
+                  </div>
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-07" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-up"></span></a>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-09" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-down"></span></a>
+                  </div>
+
+                </div> <!-- MID-COLUMN -->
+
+                <div class="col-md-2"></div>         
+              </div> <!-- ROW -->
+
+            </div>
+          </div> <!-- END vh-100 -->
+        </div> <!-- END <container> -->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-3 pt-lg-5 text-center" id="app-09" >
+
+        <div class="container">
+
+          <div class="d-flex flex-center vh-100">
+            <div class="header-text">
+
+              <div class="row align-items-left">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8 text-left">
+                  <blockquote class="blockquote">
+                    <p class="fs-2 text-800 font-weight-medium font-italic">On a scale 1-10, how how much are you willing to put in the work to improve your current situation? <sup class="fs-1">*</sup></p>
+                  </blockquote>
+
+                  <div class="form-group">
+                    <!-- <label>Your Current Location</label> -->
+                    <input class="fs-0 form-control" type="text" name="willing-to-work" placeholder="1-10" required="required" />
+                  </div>
+
+                  <!-- <p class="lead">Some text</p> -->
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top mt-4 mb-1 px-4" href="#app-10" data-fancyscroll="data-fancyscroll">OK<span class="ml-2 fas fa-check"></span></a>
+                  </div>
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-08" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-up"></span></a>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-10" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-down"></span></a>
+                  </div>
+
+                </div> <!-- MID-COLUMN -->
+
+                <div class="col-md-2"></div>         
+              </div> <!-- ROW -->
+
+            </div>
+          </div> <!-- END vh-100 -->
+        </div> <!-- END <container> -->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-3 pt-lg-5 text-center" style="background-color: #F6F0E2;" id="app-10" >
+
+        <div class="container">
+
+          <div class="d-flex flex-center vh-100">
+            <div class="header-text">
+
+              <div class="row align-items-left">
+                <div class="col-md-1"></div>
+
+                <div class="col-md-10 text-left">
+                  <blockquote class="blockquote">
+                    <p class="fs-2 text-800 font-weight-medium font-italic">How do you feel about working with Vitorio & Evia?<sup class="fs-1">*</sup></p>
+                  </blockquote>
+
+                  <div class="form-group">
+                    <!-- <label for="FormControlSelect1">Pick one</label> -->
+                    <select class="form-control" name="am-i-ready" id="FormControlSelect1">
+                      <option>I'm ready: I'm in!</option>
+                      <option>I'd like to have a clarity call with V&E</option>
+                      <option>I'm just exploring</option>
+                    </select>
+                  </div>
+
+                  <!-- <p class="lead">Some text</p> -->
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top mt-4 mb-1 px-4" href="#app-11" data-fancyscroll="data-fancyscroll">OK<span class="ml-2 fas fa-check"></span></a>
+                  </div>
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-09" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-up"></span></a>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-11" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-down"></span></a>
+                  </div>
+
+                </div> <!-- MID-COLUMN -->
+
+                <div class="col-md-1"></div>         
+              </div> <!-- ROW -->
+
+            </div>
+          </div> <!-- END vh-100 -->
+        </div> <!-- END <container> -->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-3 pt-lg-5 text-center" id="app-11" >
+
+        <div class="container">
+
+          <div class="d-flex flex-center vh-100">
+            <div class="header-text">
+
+              <div class="row align-items-left">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8 text-left">
+                  <blockquote class="blockquote">
+                    <p class="fs-2 text-800 font-weight-medium font-italic">In the next 1-2 months, what is your capacity to work on your growth with Vitorio & Evia?<sup class="fs-1">*</sup></p>
+                  </blockquote>
+
+                  <div class="form-group">
+                    <!-- <label for="FormControlSelect1">Pick one</label> -->
+                    <select class="form-control" name="ready-now" id="FormControlSelect1">
+                      <option>I'll make the time, whatever it takes!</option>
+                      <option>It's tight but I'll make it work</option>
+                      <option>I'm not sure I can fully commmit right now</option>
+                      <option>I'd like to do this work sometime later this year</option>
+                    </select>
+                  </div>
+
+                  <!-- <p class="lead">Some text</p> -->
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top mt-4 mb-1 px-4" href="#app-12" data-fancyscroll="data-fancyscroll">OK<span class="ml-2 fas fa-check"></span></a>
+                  </div>
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-10" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-up"></span></a>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-12" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-down"></span></a>
+                  </div>
+
+                </div> <!-- MID-COLUMN -->
+
+                <div class="col-md-2"></div>         
+              </div> <!-- ROW -->
+
+            </div>
+          </div> <!-- END vh-100 -->
+        </div> <!-- END <container> -->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-3 pt-lg-5 text-center" style="background-color: #F6F0E2;" id="app-12" >
+
+        <div class="container">
+
+          <div class="d-flex flex-center vh-100">
+            <div class="header-text">
+
+              <div class="row align-items-left">
+                <div class="col-md-2"></div>
+
+                <div class="col-md-8 text-left">
+                  <blockquote class="blockquote">
+                    <p class="fs-2 text-800 font-weight-medium font-italic">Working with Vitorio & Evia in any of their live programs is an investment that starts at € 2,400 / month. Is this something for you?<sup class="fs-1">*</sup></p>
+                  </blockquote>
+
+                  <div class="form-group">
+                    <!-- <label for="FormControlSelect1">Pick one</label> -->
+                    <select class="form-control" name="ready-now" id="FormControlSelect1">
+                      <option>Yes, I am ready to start</option>
+                      <option>I can make it work if I feel this is the right step for me</option>
+                      <option>I'd like to have a clarity call first, to understand what's right for me</option>
+                      <option>That's not for me at the moment</option>
+                    </select>
+                  </div>
+
+                  <!-- <p class="lead">Some text</p> -->
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top mt-4 mb-1 px-4" href="#app-last" data-fancyscroll="data-fancyscroll">OK<span class="ml-2 fas fa-check"></span></a>
+                  </div>
+
+                  <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-11" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-up"></span></a>
+                    <a class="btn btn-dark hvr-sweep-top px-2" href="#app-last" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-down"></span></a>
+                  </div>
+
+                </div> <!-- MID-COLUMN -->
+
+                <div class="col-md-2"></div>         
+              </div> <!-- ROW -->
+
+            </div>
+          </div> <!-- END vh-100 -->
+        </div> <!-- END <container> -->
+
+      </section>
+      <!-- <section> close ============================-->
+      <!-- ============================================-->
+
+
+
+      <!-- ============================================-->
+      <!-- <section> begin ============================-->
+      <section class="pt-3 pt-lg-5 text-center" id="app-last" >
+
+        <div class="container">
+
+          <div class="d-flex flex-center vh-100">
+            <div class="header-text">
+
+              <div class="row align-items-left">
+                <div class="col-md-1"></div>
 
                 <div class="col-md-10 text-left">
                   <blockquote class="blockquote">
@@ -320,10 +764,11 @@
                     <a class="btn btn-dark hvr-sweep-top mt-4 mb-1 px-4" href="#app-04" data-fancyscroll="data-fancyscroll">OK<span class="ml-2 fas fa-check"></span></a>
                   </div> -->
 
-                  <div class="zform-feedback my-2"></div>
+                  <div class="zform-feedback my-"></div>
                   <button class="btn btn-block btn-dark hvr-sweep-top mb-1" type="submit">Send Application</button>
               </form>
-              <!--==== END FORM ====-->
+              <!-- END FORM ===============-->
+              <!--=========================-->
 
                   <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
                     <a class="btn btn-dark hvr-sweep-top px-2" href="#app-03" data-fancyscroll="data-fancyscroll"><span class="fas fa-angle-up"></span></a>
@@ -332,12 +777,11 @@
 
                 </div> <!-- MID-COLUMN -->
 
-                <div class="col-md-2"></div>         
+                <div class="col-md-1"></div>         
               </div> <!-- ROW -->
 
             </div>
           </div> <!-- END vh-100 -->
-
         </div> <!-- END <container> -->
 
       </section>

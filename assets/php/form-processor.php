@@ -11,6 +11,7 @@
 		$name		= "Website User";
 		$subject	= "Email from Your Website";
 		$file		= '';
+		$redirect	= 'https://ooblue.is';
 		$reCaptchaSecret = "6Lck1FAUAAAAAH3Y3wOtFAx5IjS2z_MD5WpNl4P9";
 
 
@@ -33,6 +34,11 @@
 		if(isset($_POST['file'])){
 			$file 	= $_POST['file'];
 			unset($_POST['file']);
+		}
+
+		if(isset($_POST['redirect'])){
+			$redirect 	= $_POST['redirect'];
+			unset($_POST['redirect']);
 		}
 
 		if(array_key_exists("g-recaptcha-response", $_POST)) {
@@ -158,8 +164,14 @@
 		echo
 		'<div class="alert alert-success alert-dismissible fade show" role="alert">
 			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			Your message has been sent successfully.
-		</div>';
+			Your application has been sent successfully.
+		</div>
+		<div>
+           <a class="btn btn-block btn-success btn-lg hvr-sweep-top mb-1" href="';
+        echo $redirect;   
+        echo '">OK</a>
+        </div>
+		';
 	}
 
 
