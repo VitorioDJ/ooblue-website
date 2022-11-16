@@ -156,6 +156,7 @@
 
             <div class="col-md-8 text-left vh-100">
             
+              <!--
               <ul class="nav nav-pills " id="pill-myTab" role="tablist">
                 <li class="nav-item"><a class="nav-link active" id="w1-tab" data-toggle="tab" href="#pill-tab-w1" role="tab" aria-controls="tab-w1" aria-selected="true">Page 1</a></li>
                 <li class="nav-item"><a class="nav-link" id="w2-tab" data-toggle="tab" href="#pill-tab-w2" role="tab" aria-controls="tab-w2" aria-selected="false">Page 2</a></li>
@@ -174,13 +175,13 @@
                 <li class="nav-item"><a class="nav-link" id="w13-tab" data-toggle="tab" href="#pill-tab-w13" role="tab" aria-controls="tab-w13" aria-selected="false">Page 13</a></li>
                 <li class="nav-item"><a class="nav-link" id="w14-tab" data-toggle="tab" href="#pill-tab-w14" role="tab" aria-controls="tab-w14" aria-selected="false">Send</a></li>
               </ul>
+              -->
               
-      
               <div class="tab-content mt-3" id="pill-myTabContent">
 
                 <div class="tab-pane fade show active" id="pill-tab-w1" role="tabpanel" aria-labelledby="w1-tab">
                   <div class="card">
-                    <div class="card-header"><h5>Page 1</span></h5></div>         
+                    <div class="card-header"><h5>1</h5></div>         
                     <ul class="list-group list-group-flush">
                       <li class="list-group-item">
                           <p class="card-title lead font-weight-medium">Your First and Last Name *</p>
@@ -196,7 +197,7 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -220,8 +221,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(-1)" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -244,8 +245,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(-1)" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul> 
@@ -269,8 +270,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(-1)" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -294,8 +295,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" onclick="changeTab(-1)" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" onclick="changeTab(1)" href="#" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -319,8 +320,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(-1)" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -355,8 +356,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(-1)" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -380,8 +381,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(-1)" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -405,8 +406,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(-1)" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -434,8 +435,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(-1)" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -464,8 +465,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(-1)" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -489,8 +490,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(-1)" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -519,8 +520,8 @@
                         </li>
                         <li class="list-group-item">
                           <div data-zanim-xs='{"from":{"opacity":0,"y":30},"to":{"opacity":1,"y":0},"duration":1.5,"delay":0.5}'>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Prev</a>
-                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" data-fancyscroll="data-fancyscroll">Next</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(-1)" data-fancyscroll="data-fancyscroll">Prev</a>
+                            <a class="btn btn-dark hvr-sweep-top px-2" href="#" onclick="changeTab(1)" data-fancyscroll="data-fancyscroll">Next</a>
                           </div>
                         </li>
                     </ul>
@@ -609,6 +610,7 @@
 
 
 
+    
     <!-- ===============================================-->
     <!--    JavaScripts-->
     <!-- ===============================================-->
@@ -618,7 +620,8 @@
     <script src="./assets/js/theme.js"></script>
     <script src="./assets/lib/plyr/plyr.polyfilled.min.js"></script>
     <script src="assets/lib/fancybox/jquery.fancybox.min.js"></script>
-
+<!-----CUSTOME JS----->
+<script defer src="./ob-app.js"></script>
   </body>
 
 </html>
