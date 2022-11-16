@@ -123,13 +123,18 @@
 
             <div class="col-lg-6">
               <h5 class="mb-3">Please enter your birth details</h5>
+
+              <!-- =======================================-->
+              <!-- FORM begin ============================-->
               <form class="zform text-left" method="post">
                 <!-- Enter TO: e-mail address here -->
                 <input type="hidden" name="to" value="vitorio@ooblue.is" />
                 <!-- Enter CSV FILE NAME: CSV File Name (without extension) -->
                 <input type="hidden" name="file" value="birth-details" /> 
                 <!-- Enter SUBJECT: e-mail subject here -->
-                <input type="hidden" name="subject" value="E-mail from ooBlue.is" /> 
+                <input type="hidden" name="subject" value="Birth Details - ooBlue" /> 
+                <!-- Enter REDIRECT: redirection after form submitted -->
+                <input type="hidden" name="redirect" value="https://ooblue.is" />
 
                 <div class="form-group">
                   <label>Name *</label>
@@ -181,6 +186,9 @@
                 <div class="zform-feedback my-2"></div>
                 <button class="btn btn-block btn-dark hvr-sweep-top" type="submit">Send Birth Details</button>
               </form>
+              <!-- END FORM ===============-->
+              <!--=========================-->
+
             </div>
 
             <div class="col-md-3">
