@@ -129,7 +129,6 @@
 
 		// To send HTML mail, the Content-type header must be set
 		define('HEADER_TRAIL', "\r\n");
-		define('EMAIL_HTML', 1);
 	   	$headers  = 'MIME-Version: 1.0' . HEADER_TRAIL;
 	   	$headers .= ( ! EMAIL_HTML) ? 'Content-type: text;' . HEADER_TRAIL : 'Content-type: text/html; charset=iso-8859-1' . HEADER_TRAIL ;
 
